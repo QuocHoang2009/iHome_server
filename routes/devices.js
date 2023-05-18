@@ -11,7 +11,7 @@ import {
     linkButton,
     linkDevices,
     updateDevice,
-} from '../controllers/Devices.js';
+} from '../controllers/devices.js';
 
 const router = express.Router();
 
