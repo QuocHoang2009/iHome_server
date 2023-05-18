@@ -40,7 +40,8 @@ let node;
 //   connectTimeout: 5000,
 // };
 
-const client = mqtt.connect(process.env.BROKER_URL);
+// const client = mqtt.connect(process.env.BROKER_URL);
+const client = mqtt.connect('mqtt://test.mosquitto.org:1883');
 
 client.on('error', (error) => console.log('error', error.message));
 
