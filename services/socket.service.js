@@ -3,7 +3,7 @@ class SocketServices {
     connection(socket) {
         socket.on('disconnect', () => {
             console.log(`User disconnect id is ${socket.id}`);
-        }); 
+        });
 
         // event on here
 
@@ -11,6 +11,8 @@ class SocketServices {
             console.log(`msg is:::${msg}`);
             _io.emit('chat message', msg);
         });
+
+        console.log('connect socket');
 
         // on room..
     }
