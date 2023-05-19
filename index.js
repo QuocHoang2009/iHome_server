@@ -25,8 +25,8 @@ import './controllers/nodes.js';
 const directStorage = 'public/assets';
 const corsOptions = {
     origin: [
-        'http://localhost:3001',
-        'http://localhost:3000',
+        'https://ihome.onrender.com',
+        'https://i-home-client.vercel.app',
         'https://storage.googleapis.com/deathshop-15e27.appspot.com',
     ],
     credentials: true,
@@ -81,7 +81,7 @@ const server = app.listen(PORT, () => console.log(`Server Port: ${PORT}`));
 
 const io = new Server(server, {
     cors: {
-        origin: 'http://localhost:3000', 
+        origin: 'https://ihome.onrender.com',
         methods: ['GET', 'POST'],
     },
 });
