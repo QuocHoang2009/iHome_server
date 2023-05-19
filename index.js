@@ -49,7 +49,6 @@ app.use('/assets', express.static(path.join(__dirname, 'public/assets')));
 app.use(cors(corsOptions));
 
 /* FILE STORAGE */
-
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
         cb(null, directStorage);
